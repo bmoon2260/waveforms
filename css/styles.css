@@ -165,3 +165,17 @@ nav span:hover img {
   overflow-y: auto;
   padding-right: 0.5rem;
 }
+
+.back-button {
+  display: inline-block;
+  background: #7a3db8;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.back-button:hover {
+  background: #ff5500;
+}
