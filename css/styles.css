@@ -131,15 +131,21 @@ body {
 
 .dropdown-content a {
   color: #ffffff;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.25rem;
   text-decoration: none;
   display: block;
+  border-radius: 6px; 
+  margin-bottom: 0.25rem;
 }
 
 .dropdown-content a:hover {
   background-color: #5a2a79;
 }
 
+.dropdown-content a {
+  transition: background-color 0.2s ease;
+}
+  
 .dropdown:hover .dropdown-content {
   display: block;
 }
