@@ -118,7 +118,7 @@ nav span:hover img {
 .audio-embed {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 0 2rem 0;
   padding: 2rem 0;
   background: linear-gradient(90deg, rgba(50,50,50,0.2), rgba(80,80,80,0.2));
   border-bottom: 4px solid #7a3db8;
