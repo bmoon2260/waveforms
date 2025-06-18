@@ -64,7 +64,7 @@ nav a {
   color: #ff5500;
   border-radius: 4px;
   text-decoration: none;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
 }
 
 Enhance nav bar: padding, buttons, larger text, left align
@@ -78,7 +78,7 @@ nav {
   text-align: left;
 }
 nav a {
-  margin-right: 0.75rem;
+  margin-right: 1rem;
 }
 
 nav a img {
@@ -89,7 +89,7 @@ nav a img {
 
 nav a {
   display: inline-block;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
   text-decoration: none;
 }
 
@@ -98,7 +98,6 @@ nav span img {
   display: inline-block;
   height: 50px;  /* or your chosen button height */
   transition: transform 0.2s ease;
-  margin-right: 0.75rem;
 }
 
 nav a:hover img,
@@ -122,7 +121,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
 }
 
 .dropdown-content {
