@@ -179,3 +179,7 @@ nav span:hover img {
 .back-button:hover {
   background: #ff5500;
 }
+
+main h1 {
+  padding-left: 1.5rem;
+}
