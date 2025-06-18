@@ -110,4 +110,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
 
-  
+  h1 {
+  color: #5a2a79;
+  font-size: 2rem;
+  margin-top: 1rem;
