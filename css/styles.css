@@ -62,8 +62,6 @@ nav a {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   color: #ff5500;
-  background-color: #222;
-  border: 1px solid #ff5500;
   border-radius: 4px;
   text-decoration: none;
   margin-right: 0.5rem;
@@ -92,4 +90,20 @@ nav a img {
   display: inline-block;
   height: 50px;
 
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+nav a img {
+  display: inline-block;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+nav a:hover img {
+  transform: scale(1.1);
 }
