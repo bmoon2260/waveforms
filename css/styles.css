@@ -114,3 +114,32 @@ body {
   color: #5a2a79;
   font-size: 2rem;
   margin-top: 1rem;
+}
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ff5500;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
