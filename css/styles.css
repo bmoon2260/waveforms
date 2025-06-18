@@ -23,6 +23,13 @@ header {
   padding: 0;
 }
 
+footer {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;  /* white text */
+}
+
 main {
   padding: 2rem;
 }
