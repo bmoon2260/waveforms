@@ -75,3 +75,15 @@ nav a:hover {
 }
 
 Enhance nav bar: padding, buttons, larger text, left align
+
+av a img {
+  display: inline-block;
+  height: 60px; /* match your button design height */
+}
+nav {
+  padding: 1rem;
+  text-align: left;
+}
+nav a {
+  margin-right: 0.5rem;
+}
