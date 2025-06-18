@@ -34,6 +34,12 @@ main {
   padding: 2rem;
 }
 
+main h1 {
+  font-size: 2rem;
+  color: #ff5500;
+  margin-top: 1rem;
+}
+
 .slim-banner {
   display: block;
   width: 100vw;
