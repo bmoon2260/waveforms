@@ -27,7 +27,7 @@ footer {
   background-color: #222;
   padding: 1rem;
   text-align: center;
-  color: #ffffff;  /* white text */
+  color: #ffffff;
 }
 
 main {
@@ -66,7 +66,7 @@ nav span img {
 
 nav a:hover img,
 nav span:hover img {
-  transform: scale(1.05);  /* more subtle grow effect */
+  transform: scale(1.05);
 }
 
 .slim-banner {
@@ -133,8 +133,29 @@ nav span:hover img {
   border: none;
 }
 
-/* Fade-in effect */
 @keyframes fadeInEmbed {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+.transcript-link {
+  margin-top: 0.5rem;
+}
+
+.transcript-link a {
+  color: #7a3db8;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.transcript-link a:hover {
+  color: #ff5500;
+}
+
+.transcript-box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #f9f9f9;
+  max-width: 800px;
 }
