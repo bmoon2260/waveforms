@@ -52,3 +52,26 @@ main h1 {
     max-height: 60px;
   }
 }
+nav {
+  text-align: left;
+  padding: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  color: #ff5500;
+  background-color: #222;
+  border: 1px solid #ff5500;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #ff5500;
+  color: #111;
+}
+
+Enhance nav bar: padding, buttons, larger text, left align
