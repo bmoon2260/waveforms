@@ -87,3 +87,9 @@ nav {
 nav a {
   margin-right: 0.5rem;
 }
+
+nav a img {
+  display: inline-block;
+  height: 50px;
+
+}
