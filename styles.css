@@ -14,6 +14,12 @@ header, footer {
   text-align: center;
 }
 
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0; 
+}
+
 nav a {
   color: #ff5500;
   text-decoration: none;
@@ -30,7 +36,8 @@ main {
 
 .slim-banner {
   display: block;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: auto;
   max-height: 100px;
   object-fit: cover;
