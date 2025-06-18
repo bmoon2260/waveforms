@@ -4,6 +4,11 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  background-image: url('../media/images/static-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 header, footer {
@@ -15,27 +20,46 @@ header, footer {
 header {
   width: 100%;
   margin: 0;
-  padding: 0; 
-}
-
-nav a {
-  color: #ff5500;
-  text-decoration: none;
-  margin: 1rem;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  padding: 0;
 }
 
 main {
   padding: 2rem;
 }
 
-main h1 {
+h1 {
+  color: #5a2a79;
   font-size: 2rem;
-  color: #ff5500;
   margin-top: 1rem;
+}
+
+nav {
+  text-align: left;
+  padding: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+nav .dropdown {
+  display: inline-block;
+  position: relative;
+  margin-right: 1rem;
+}
+
+nav a img,
+nav span img {
+  display: inline-block;
+  height: 50px;
+  transition: transform 0.2s ease;
+}
+
+nav a:hover img,
+nav span:hover img {
+  transform: scale(1.05);  /* more subtle grow effect */
 }
 
 .slim-banner {
@@ -51,78 +75,11 @@ main h1 {
   .slim-banner {
     max-height: 60px;
   }
-}
-nav {
-  text-align: left;
-  padding: 1rem;
-}
 
-nav a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  color: #ff5500;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-right: 1rem;
-}
-
-Enhance nav bar: padding, buttons, larger text, left align
-
-nav a img {
-  display: inline-block;
-  height: 60px; 
-}
-
-nav {
-  padding: 1rem;
-  text-align: left;
-}
-nav a {
-  margin-right: 1rem;
-}
-
-nav a img {
-  display: inline-block;
-  height: 50px;
-
-}
-
-nav a {
-  display: inline-block;
-  margin-right: 1rem;
-  text-decoration: none;
-}
-
-nav a img,
-nav span img {
-  display: inline-block;
-  height: 50px;  /* or your chosen button height */
-  transition: transform 0.2s ease;
-}
-
-nav a:hover img,
-nav span:hover img {
-  transform: scale(1.2);
-}
-
-body {
-  background-image: url('../media/images/static-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-
-  h1 {
-  color: #5a2a79;
-  font-size: 2rem;
-  margin-top: 1rem;
-}
-  
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-right: 1rem;
+  nav a,
+  nav .dropdown {
+    margin-right: 0.5rem;
+  }
 }
 
 .dropdown-content {
@@ -138,18 +95,15 @@ body {
   padding: 0.75rem 1.25rem;
   text-decoration: none;
   display: block;
-  border-radius: 6px; 
+  border-radius: 6px;
   margin-bottom: 0.25rem;
+  transition: background-color 0.2s ease;
 }
 
 .dropdown-content a:hover {
   background-color: #5a2a79;
 }
 
-.dropdown-content a {
-  transition: background-color 0.2s ease;
-}
-  
 .dropdown:hover .dropdown-content {
   display: block;
 }
