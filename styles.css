@@ -27,3 +27,17 @@ nav a:hover {
 main {
   padding: 2rem;
 }
+
+.slim-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .slim-banner {
+    max-height: 60px;
+  }
+}
