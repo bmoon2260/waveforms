@@ -256,4 +256,11 @@ figcaption {
     max-width: 100%;
     margin: 1em 0;
   }
-  
+
+.figure-2 {
+  float: left;
+  max-width: 40%;
+  margin: 0 1em 1em 0;
+  clear: both;
+}
+
