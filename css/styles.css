@@ -185,9 +185,11 @@ nav span:hover img {
   background: #ff5500;
 }
 
-.content-wrap {
-  padding-left: 3rem;
-  padding-right: 3rem;
+content-wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 1em 3em;
+
 }
 
 html, body {
