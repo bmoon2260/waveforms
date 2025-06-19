@@ -263,14 +263,21 @@ figcaption {
   flex-wrap: wrap;  /* ensures they stack if needed on small screens */
 }
 
+.track-nav {
+  display: flex;
+  justify-content: space-between;  /* pushes buttons to far ends of container */
+  margin: 2em 0;
+  flex-wrap: wrap;  /* ensures they stack if needed on small screens */
+}
+
 .track-button {
   display: inline-block;
   padding: 1em 1.5em;
-  background-color:
+  background-color: #431a50; 
   color: #fff;
   text-decoration: none;
   font-size: 1.2em;
-  border-radius: 50px; 
+  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
 
@@ -295,4 +302,3 @@ figcaption {
     margin: 1em 0;
   }
 }
-
