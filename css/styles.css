@@ -294,6 +294,10 @@ figcaption {
   text-align: right;
 }
 
+.center-text {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .figure-1,
   .figure-2 {
