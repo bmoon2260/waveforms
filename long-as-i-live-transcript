@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Long As I Live - Transcript</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .return-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #431a50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .return-button:hover {
+      background-color: #5c2470;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="media/images/banner-slim.jpg" alt="Waveforms Webtext Slim Banner" style="width:100%;">
+    </a>
+  </header>
+
+  <main>
+    <h1>Long As I Live - Accessible Transcript</h1>
+
+    <p><a href="long-as-i-live.html" class="return-button">← Return</a></p>
+
+    <pre style="white-space: pre-wrap; font-family: sans-serif; background-color: #f9f9f9; padding: 10px; border: 1px solid #ccc;">
+Jazzy intro fades in
+
+[BL] Listen!
+
+[MLH] Hip Hop habits of body and mind.
+
+[BL] They’re drumming.
+There’s a soundtrack
+playing in their bodies.
+
+[JDA] Forms of representation
+and communication that are
+electronic.
+
+[BL] Hip Hop everywhere!
+So you have to listen.
+
+[CE] Hip Hop is the cultural artifact
+and the art form that has been
+transplanted from the Bronx, 
+New York City,
+to all over the planet. 
+It has captured the minds, thoughts, ideas
+of a whole new generation of people. 
+
+[BL] Hip Hop sensibilities—
+and that is a way of knowing, 
+a way of being, 
+and a way of thinking. 
+
+[CE] It is the culture
+of young people.
+
+[BL] Soundtrack.
+
+[BL] Their Hip Hop identities
+are directly linked to schooling.
+
+[JDA] Electronic.
+
+[DK] They’re reading and writing
+in complicated and beautiful ways. 
+
+[BL] Listen!
+
+[DK] Whenever you enter
+into a classroom space
+you’re entering into 
+a contested space. 
+It’s a political space.  
+
+[BL] Knowledge as an embodied practice.
+
+[MLH] Hip Hop habits of body and mind.
+
+[BL] They’re drumming.
+There’s a soundtrack
+playing in their bodies.
+
+[JDA] Forms of representation
+and communication that are
+electronic.
+
+[BL] Hip Hop everywhere!          [JDA] electronic
+
+[BL] So you have to listen.
+
+
+[BL] Bettina Love
+[CE] Chris Emdin
+[DK] David Kirkland
+[JDA] Jeff Duncan-Andrade
+[MLH] Marc Lamont Hill
+    </pre>
+
+    <p><a href="long-as-i-live.html" class="return-button">← Return</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Brian Mooney</p>
+  </footer>
+</body>
+</html>
