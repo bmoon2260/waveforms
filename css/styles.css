@@ -129,8 +129,8 @@ nav span:hover img {
 .audio-embed iframe {
   display: block;
   width: 100%;
-  height: 166px;
-  border: none;
+  box-sizing: border-box;
+  margin: 1em 0; 
 }
 
 .audio-embed iframe,
