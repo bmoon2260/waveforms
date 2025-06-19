@@ -185,11 +185,11 @@ nav span:hover img {
   background: #ff5500;
 }
 
-content-wrap {
+.content-wrap {
   max-width: 750px;
   margin: 0 auto;
   padding: 1em 3em;
-
+  box-sizing: border-box;
 }
 
 html, body {
@@ -233,8 +233,6 @@ figcaption {
   float: right;
   max-width: 70%;
   margin: 0 0 1em 1em;
-}
-
 }
 
 .figure-1 img {
