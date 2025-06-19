@@ -181,9 +181,9 @@ nav span:hover img {
 }
 
 .content-wrap {
-  max-width: 750px;
+  max-width: 9000px;
   margin: 0 auto;
-  padding: 1em 1.5em;
+  padding: 1em 2em; 
   box-sizing: border-box;
 }
 
@@ -208,44 +208,41 @@ html, body {
 }
 
 figure img {
-  max-width: 600px;
+  max-width: 100%;
   width: 100%;
   height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
+
 figure {
   margin: 2em 0; 
   text-align: center;
 }
+
 figcaption {
   font-size: 0.9em;
   color: #666;
+  margin-top: 0.5em;
 }
 
 .figure-1 {
   float: right;
-  max-width: 70%;
+  max-width: 50%;
   margin: 0 0 1em 1em;
 }
 
 .figure-1 img {
-  max-width: 100%; /* ensure it scales within float container */
+  max-width: 100%;
 }
 
 .figure-2 {
   float: left;
-  max-width: 30%;
+  max-width: 40%; /* choose 40% or 35% — I’ve picked 40% here */
   margin: 0 1em 1em 0;
+  clear: both;
 }
 
 .figure-2 img {
   max-width: 100%;
-}
-
-figcaption {
-  margin-top: 0.5em; /* add spacing between image and caption */
 }
 
 @media (max-width: 768px) {
@@ -255,11 +252,5 @@ figcaption {
     max-width: 100%;
     margin: 1em 0;
   }
-}
-.figure-2 {
-  float: left;
-  max-width: 40%;
-  margin: 0 1em 1em 0;
-  clear: both;
 }
 
