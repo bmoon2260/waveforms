@@ -133,6 +133,13 @@ nav span:hover img {
   border: none;
 }
 
+.audio-embed iframe,
+.transcript-box {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+}
+
 @keyframes fadeInEmbed {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
