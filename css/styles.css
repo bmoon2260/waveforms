@@ -224,3 +224,36 @@ figcaption {
   font-size: 0.9em;
   color: #666;
 }
+
+.figure-1 {
+  float: right;
+  max-width: 50%;
+  margin: 0 0 1em 1em;
+}
+
+.figure-1 img {
+  max-width: 100%; /* ensure it scales within float container */
+}
+
+.figure-2 {
+  float: left;
+  max-width: 40%;
+  margin: 0 1em 1em 0;
+}
+
+.figure-2 img {
+  max-width: 100%;
+}
+
+figcaption {
+  margin-top: 0.5em; /* add spacing between image and caption */
+}
+
+@media (max-width: 768px) {
+  .figure-1,
+  .figure-2 {
+    float: none;
+    max-width: 100%;
+    margin: 1em 0;
+  }
+  
