@@ -63,13 +63,13 @@ nav .dropdown {
 nav a img,
 nav span img {
   display: inline-block;
-  height: 50px;
-  transition: transform 0.2s ease;
+  height: 60px;
+  transition: transform 0.3s ease;
 }
 
 nav a:hover img,
 nav span:hover img {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .slim-banner {
