@@ -63,7 +63,7 @@ nav .dropdown {
 nav a img,
 nav span img {
   display: inline-block;
-  height: 65px;
+  height: 70px;
   transition: transform 0.3s ease;
 }
 
