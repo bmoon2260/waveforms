@@ -187,3 +187,19 @@ nav span:hover img {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1;
+}
+
