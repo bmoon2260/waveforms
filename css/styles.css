@@ -181,9 +181,9 @@ nav span:hover img {
 }
 
 .content-wrap {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1em 0.15em; 
+  padding: 1em 1.5em; 
   box-sizing: border-box;
 }
 
