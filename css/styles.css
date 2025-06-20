@@ -313,6 +313,11 @@ figcaption {
   cursor: pointer;
 }
 
+.center-rewind {
+  text-align: center;
+  margin: 1em 0;
+}
+
 @media (max-width: 768px) {
   .figure-1,
   .figure-2 {
