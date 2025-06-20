@@ -239,8 +239,13 @@ figure {
 
 figcaption {
   font-size: 0.9em;
-  color: #666;
+  color: #333;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
   margin-top: 0.5em;
+}
+
 }
 
 .figure-1 {
