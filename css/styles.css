@@ -182,9 +182,27 @@ nav * {
 }
 
 .transcript-link a {
-  color: #431a50;  /* Darker purple for stronger contrast */
+  color: #431a50; 
   text-decoration: underline;
   font-weight: bold;
+}
+
+.transcript-link button.transcript-toggle {
+  background: none;
+  border: none;
+  color: #431a50; 
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 0;
+}
+
+.transcript-link button.transcript-toggle:hover,
+.transcript-link button.transcript-toggle:focus {
+  color: #ff5500; 
+  outline: none;
 }
 
 .transcript-link a:hover {
