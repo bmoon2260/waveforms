@@ -252,11 +252,13 @@ figcaption {
   text-indent: 2em;
 }
 
-..track-nav {
+.track-nav-flex {
   display: flex;
-  justify-content: space-between;
-  margin: 2em 0;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em 0;
 }
 
 .track-nav {
