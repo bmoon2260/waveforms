@@ -425,6 +425,35 @@ figure {
   border-radius: 6px;
 }
 
+.participant-image-float-right {
+  float: right;
+  max-width: 40%;
+  margin: 0 0 1em 1em;
+  text-align: center;
+}
+
+.participant-image-float-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.participant-image-float-right figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .participant-image-float-right {
+    float: none;
+    max-width: 100%;
+    margin: 1em auto;
+  }
+}
+
 @media (max-width: 768px) {
   .figure-1,
   .figure-2 {
