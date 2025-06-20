@@ -355,6 +355,11 @@ figcaption {
   cursor: pointer;
 }
 
+a:focus, button:focus {
+  outline: 3px solid #ff5500;
+  outline-offset: 2px;
+}
+
 .center-rewind {
   text-align: center;
   margin: 1em 0;
