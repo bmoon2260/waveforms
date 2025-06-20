@@ -228,7 +228,7 @@ figcaption {
 
 .figure-2 {
   float: left;
-  max-width: 40%; /* choose 40% or 35% — I’ve picked 40% here */
+  max-width: 40%;
   margin: 0 1em 1em 0;
   clear: both;
 }
@@ -243,16 +243,16 @@ figcaption {
 
 ..track-nav {
   display: flex;
-  justify-content: space-between;  /* pushes buttons to far ends of container */
+  justify-content: space-between;
   margin: 2em 0;
-  flex-wrap: wrap;  /* ensures they stack if needed on small screens */
+  flex-wrap: wrap;
 }
 
 .track-nav {
   display: flex;
-  justify-content: space-between;  /* pushes buttons to far ends of container */
+  justify-content: space-between;
   margin: 2em 0;
-  flex-wrap: wrap;  /* ensures they stack if needed on small screens */
+  flex-wrap: wrap;
 }
 
 .track-button {
@@ -281,6 +281,14 @@ figcaption {
 
 .center-text {
   text-align: center;
+}
+
+.track-image-button {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0.5rem; 
 }
 
 @media (max-width: 768px) {
