@@ -72,7 +72,9 @@
 </div>
 
 <p class="transcript-link">
-  <a href="#" onclick="document.getElementById('transcript-box').style.display='block'; return false;">Show Transcript</a> |
+  <button type="button" class="transcript-toggle" aria-expanded="false" onclick="toggleTranscript(this)">
+    Show Transcript
+  </button> |
   <a href="fatmata-song-transcript.html">Accessible Plain Text Transcript</a>
 </p>
 
