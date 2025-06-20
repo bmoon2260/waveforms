@@ -160,7 +160,6 @@ nav * {
 
 .audio-embed iframe {
   display: block;
-  width: 100%;
   box-sizing: border-box;
   margin: 1em 0; 
 }
@@ -170,6 +169,13 @@ nav * {
   box-sizing: border-box;
   width: 100%;
   display: block;
+}
+
+.responsive-iframe {
+  width: 100%;
+  max-width: 1200px; 
+  display: block;
+  border: none;
 }
 
 @keyframes fadeInEmbed {
