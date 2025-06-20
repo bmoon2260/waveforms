@@ -173,20 +173,6 @@ nav span:hover img {
   padding-right: 0.5rem;
 }
 
-.back-button {
-  display: inline-block;
-  background: #7a3db8;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
-.back-button:hover {
-  background: #ff5500;
-}
-
 .content-wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -199,19 +185,18 @@ html, body {
   padding: 0;
 }
 
-.return-button {
+.return-button, .back-button {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #431a50;
+  background: #7a3db8;
   color: #fff;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-.return-button:hover {
-  background-color: #5c2470;
+.return-button:hover, .back-button:hover {
+  background: #ff5500;
 }
 
 figure img {
