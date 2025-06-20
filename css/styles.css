@@ -25,6 +25,12 @@ header {
   padding: 0;
 }
 
+.header-inner {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
 footer {
   width: 100%;
   background: ##000000; 
