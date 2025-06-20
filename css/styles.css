@@ -231,9 +231,11 @@ nav * {
 
 .content-wrap {
   max-width: 1200px;
+  background: rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   padding: 1em 1em; 
   box-sizing: border-box;
+  border-radius: 8px; 
 }
 
 html, body {
