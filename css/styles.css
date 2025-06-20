@@ -301,6 +301,11 @@ figcaption {
   display: inline-block;
   margin: 0.5rem; 
   user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.track-image-button:hover {
+  transform: scale(1.2);
 }
 
 .track-image-button,
