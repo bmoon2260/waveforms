@@ -454,6 +454,35 @@ figure {
   }
 }
 
+.participant-image-float-left {
+  float: left;
+  max-width: 50%;
+  margin: 0 1em 1em 0;
+  text-align: center;
+}
+
+.participant-image-float-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.participant-image-float-left figcaption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 0.5em;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .participant-image-float-left {
+    float: none;
+    max-width: 100%;
+    margin: 1em auto;
+  }
+}
+
 @media (max-width: 768px) {
   .figure-1,
   .figure-2 {
