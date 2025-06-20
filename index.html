@@ -69,6 +69,16 @@
   <a href="intro-transcript.html">Accessible Plain Text Transcript</a>
 </p>
 
+<script>
+function toggleTranscript(btn) {
+  const box = document.getElementById('transcript-box');
+  const isHidden = box.style.display === 'none' || box.style.display === '';
+  box.style.display = isHidden ? 'block' : 'none';
+  btn.setAttribute('aria-expanded', isHidden);
+  btn.textContent = isHidden ? 'Hide Transcript' : 'Show Transcript';
+}
+</script>
+
     <div id="transcript-box" class="transcript-box" style="display: none;">
       <p><a href="#" onclick="document.getElementById('transcript-box').style.display='none'; return false;">Hide Transcript</a></p>
       <div class="transcript-scroll">
