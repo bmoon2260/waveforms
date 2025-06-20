@@ -84,7 +84,19 @@ function toggleTranscript(btn) {
     btn.setAttribute('aria-expanded', 'true');
   }
 }
+
+function hideTranscriptFromInner() {
+  const box = document.getElementById('transcript-box');
+  const btn = document.querySelector('.transcript-toggle');
+
+  box.style.display = 'none';
+  if (btn) {
+    btn.textContent = 'Show Transcript';
+    btn.setAttribute('aria-expanded', 'false');
+  }
+}
 </script>
+
 
     <div id="transcript-box" class="transcript-box" style="display: none;">
       <p><a href="#" onclick="document.getElementById('transcript-box').style.display='none'; return false;">Hide Transcript</a></p>
