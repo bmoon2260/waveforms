@@ -289,7 +289,14 @@ figcaption {
   height: auto;
   display: inline-block;
   margin: 0.5rem; 
+  user-select: none;
 }
+
+.track-image-button,
+.track-image-button * {
+  cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
   .figure-1,
