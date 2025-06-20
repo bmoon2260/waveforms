@@ -61,12 +61,10 @@
       </iframe>
     </div>
 
-<p class="transcript-link">
-  <button type="button" class="transcript-toggle" aria-expanded="false" onclick="toggleTranscript(this)">
-    Show Transcript
-  </button> |
-  <a href="intro-transcript.html">Accessible Plain Text Transcript</a>
-</p>
+    <p class="transcript-link">
+      <a href="#" onclick="document.getElementById('transcript-box').style.display='block'; return false;">Show Transcript</a> |
+      <a href="intro-transcript.html">Accessible Plain Text Transcript</a>
+    </p>
 
     <div id="transcript-box" class="transcript-box" style="display: none;">
       <p><a href="#" onclick="document.getElementById('transcript-box').style.display='none'; return false;">Hide Transcript</a></p>
