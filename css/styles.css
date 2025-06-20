@@ -268,21 +268,28 @@ figcaption {
   flex-wrap: wrap;
 }
 
-.track-nav-inline {
+.track-nav-balanced {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 1em;
+  align-items: center;
   margin: 1em 0;
+}
+
+.nav-slot {
+  flex: 1;
+  display: flex;
+}
+
+.nav-slot.left {
   justify-content: flex-start;
 }
 
-.left-button {
-  margin-right: auto;
+.nav-slot.center {
+  justify-content: center;
 }
 
-.rewind-button-wrap {
-  margin: 0 auto;
+.nav-slot.right {
+  justify-content: flex-end;
 }
 
 .track-button {
