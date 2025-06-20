@@ -69,6 +69,17 @@ nav span:hover img {
   transform: scale(1.15);
 }
 
+nav a,
+nav a img,
+nav span,
+nav span img {
+  cursor: pointer;
+}
+
+nav * {
+  user-select: none;
+}
+
 .slim-banner {
   display: block;
   width: 100vw;
@@ -296,7 +307,6 @@ figcaption {
 .track-image-button * {
   cursor: pointer;
 }
-
 
 @media (max-width: 768px) {
   .figure-1,
