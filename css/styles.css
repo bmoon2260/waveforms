@@ -142,6 +142,11 @@ nav * {
   display: block;
 }
 
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+  background-color: #7a3db8;
+}
+
 .audio-embed {
   width: 100%;
   max-width: 1200px;
@@ -177,7 +182,7 @@ nav * {
 }
 
 .transcript-link a {
-  color: #7a3db8;
+  color: #431a50;  /* Darker purple for stronger contrast */
   text-decoration: underline;
   font-weight: bold;
 }
@@ -388,6 +393,12 @@ a:focus, button:focus {
   color: #fff;
   padding: 1em;
   z-index: 1000;
+}
+
+figure {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.5em;
+  border-radius: 6px;
 }
 
 @media (max-width: 768px) {
