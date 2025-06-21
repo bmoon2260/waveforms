@@ -57,6 +57,10 @@ h1 {
   margin-top: 1rem;
 }
 
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
 .centered-heading {
   text-align: center;
 }
@@ -88,6 +92,10 @@ nav span img {
 nav a:hover img,
 nav span:hover img {
   transform: scale(1.15);
+}
+
+nav a:hover img {
+  filter: brightness(1.1);
 }
 
 nav a,
@@ -261,6 +269,12 @@ html, body {
   background: #ff5500;
 }
 
+.return-button,
+.back-button,
+.track-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 figure img {
   max-width: 100%;
   width: 100%;
@@ -275,8 +289,10 @@ figure {
 figcaption {
   font-size: 0.9em;
   color: #333;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 0.25em 0.5em;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.5em;
+  border-left: 4px solid #7a3db8;
   border-radius: 4px;
   margin-top: 0.5em;
 }
@@ -300,6 +316,12 @@ figcaption {
 
 .figure-2 img {
   max-width: 100%;
+}
+
+figure {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 0.5em;
+  border-radius: 6px;
 }
 
 .indent {
@@ -336,6 +358,11 @@ figcaption {
   display: inline-block;
   user-select: none;
   transition: transform 0.3s ease;
+}
+
+nav a img,
+.track-image-button {
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .track-button {
@@ -387,6 +414,7 @@ figcaption {
 a:focus, button:focus {
   outline: 3px solid #ff5500;
   outline-offset: 2px;
+  box-shadow: 0 0 6px #ff5500;
 }
 
 .center-rewind {
@@ -468,6 +496,10 @@ figure {
   color: #555;
   margin-top: 0.5em;
   line-height: 1.4;
+}
+
+a {
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
