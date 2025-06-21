@@ -493,8 +493,8 @@ figure {
 
 @media (max-width: 600px) {
   body {
-    font-size: 1.4rem;
-    padding: 0 1em;
+    font-size: 1.5rem;
+    padding: 0 1.2em;
   }
 
   .content-wrap {
@@ -503,7 +503,7 @@ figure {
 
   .audio-embed iframe {
     width: 100%;
-    min-height: 180px;
+    min-height: 200px;
   }
 
   .dropdown-content {
@@ -514,13 +514,13 @@ figure {
 
   .dropdown-content a {
     display: block;
-    padding: 1rem;
+    padding: 1.2rem;
     background-color: #222;
   }
 
   .transcript-link a,
   .transcript-link button.transcript-toggle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 0.5rem 1rem;
   }
 }
