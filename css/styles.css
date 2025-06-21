@@ -324,26 +324,18 @@ figcaption {
 
 .track-nav-balanced {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  margin: 1em 0;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.nav-slot {
-  flex: 1;
-  display: flex;
-}
-
-.nav-slot.left {
-  justify-content: flex-start;
-}
-
-.nav-slot.center {
-  justify-content: center;
-}
-
-.nav-slot.right {
-  justify-content: flex-end;
+.track-image-button {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+  user-select: none;
+  transition: transform 0.3s ease;
 }
 
 .track-button {
