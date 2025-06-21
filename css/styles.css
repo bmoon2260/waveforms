@@ -482,13 +482,45 @@ figure {
     max-width: 100%;
     margin: 1em auto;
   }
-}
 
-@media (max-width: 768px) {
   .figure-1,
   .figure-2 {
     float: none;
     max-width: 100%;
     margin: 1em 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1.4rem;
+    padding: 0 1em;
+  }
+
+  .content-wrap {
+    padding: 1em;
+  }
+
+  .audio-embed iframe {
+    width: 100%;
+    min-height: 180px;
+  }
+
+  .dropdown-content {
+    display: block !important;
+    position: static;
+    background-color: transparent;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 1rem;
+    background-color: #222;
+  }
+
+  .transcript-link a,
+  .transcript-link button.transcript-toggle {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
   }
 }
