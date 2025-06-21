@@ -19,7 +19,7 @@ header, footer {
 }
 
 header {
-  background-color: #222;
+  background: linear-gradient(to bottom, #222 0%, #222 60%, rgba(34, 34, 34, 0) 100%);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ header {
   padding: 1rem; 
 }
 
-.nav-inner {
+.-inner {
   margin: 0 auto;
   padding: 1rem;
 }
@@ -62,8 +62,9 @@ h1 {
 }
 
 nav {
-  text-align: center;
+  background: linear-gradient(to bottom, #222 0%, #222 60%, rgba(34, 34, 34, 0) 100%);
   padding: 1rem;
+  text-align: center;
 }
 
 nav a {
@@ -234,12 +235,12 @@ nav * {
 }
 
 .content-wrap {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.55);
   max-width: 1200px;
-  background: rgba(255, 255, 255, 0.55);
   margin: 0 auto;
-  padding: 1em 1em; 
+  padding: 1em 1em;
   box-sizing: border-box;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 html, body {
