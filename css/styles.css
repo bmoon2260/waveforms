@@ -57,6 +57,10 @@ h1 {
   margin-top: 1rem;
 }
 
+.centered-heading {
+  text-align: center;
+}
+
 nav {
   text-align: center;
   padding: 1rem;
