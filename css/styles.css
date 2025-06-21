@@ -94,7 +94,7 @@ h1 {
 }
 
 nav {
-  background: linear-gradient(to bottom, #222 0%, #222 60%, rgba(34, 34, 34, 0) 100%);
+  background: linear-gradient(to top, #222 0%, rgba(34,34,34,0) 100%);
   padding: 1rem;
   text-align: center;
 }
