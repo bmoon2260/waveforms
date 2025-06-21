@@ -1,201 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Mooney, Waveforms - Intro</title>
-  <link rel="stylesheet" href="css/styles.min.css">
-</head>
-<body>
-  <a href="#main" class="skip-link" tabindex="0">Skip to main content</a>
- <header>
- <div class="banner-container">
-  <a href="index.html">
-    <img src="media/images/banner.jpg" alt="Waveforms webtext banner" class="banner-image">
-  </a>
-</div>
-  <div class="nav-inner">
-    <nav>
-      <a href="index.html">
-        <img src="media/images/nav-intro.svg" alt="Intro">
-      </a>
-      <div class="dropdown">
-        <span><img src="media/images/nav-theory.svg" alt="Theoretical Conversations"></span>
-        <div class="dropdown-content">
-          <a href="recife.html">Recife to Ferguson</a>
-          <a href="long-as-i-live.html">Long as I Live</a>
+  <head>
+    <meta charset="utf-8">
+    <title>Mooney, Waveforms - Intro</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body>
+    <a href="#main" class="skip-link" tabindex="0">Skip to main content</a>
+    <header>
+      <div class="banner-container">
+        <a href="index.html">
+        <img src="media/images/banner.jpg" alt="Waveforms webtext banner" class="banner-image">
+        </a>
+      </div>
+      <div class="nav-inner">
+        <nav>
+          <a href="index.html">
+          <img src="media/images/nav-intro.svg" alt="Intro">
+          </a>
+          <div class="dropdown">
+            <span><img src="media/images/nav-theory.svg" alt="Theoretical Conversations"></span>
+            <div class="dropdown-content">
+              <a href="recife.html">Recife to Ferguson</a>
+              <a href="long-as-i-live.html">Long as I Live</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span><img src="media/images/nav-methods.svg" alt="Remixed Methods"></span>
+            <div class="dropdown-content">
+              <a href="realm-of-entities.html">Realm of Entities</a>
+              <a href="poem-is-research.html">The Poem is the Research</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span><img src="media/images/nav-praisesongs.svg" alt="Praisesongs"></span>
+            <div class="dropdown-content">
+              <a href="edsel-song.html">Edsel’s Song</a>
+              <a href="aaleah-song.html">Aaleah’s Song</a>
+              <a href="otto-song.html">Otto’s Song</a>
+              <a href="fatmata-song.html">Fatmata’s Song</a>
+            </div>
+          </div>
+          <a href="outro.html">
+          <img src="media/images/nav-outro.svg" alt="Outro">
+          </a>
+          <a href="references.html">
+          <img src="media/images/nav-references.svg" alt="References">
+          </a>
+          <a href="author.html">
+          <img src="media/images/nav-author.svg" alt="Author">
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="content-wrap">
+      <h1>Intro</h1>
+      <div class="audio-embed">
+        <iframe class="responsive-iframe" height="166" allow="autoplay"
+          title="Audio player for Intro track"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1185861439&color=%23431a50&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+        </iframe>
+      </div>
+      <p class="transcript-link">
+        <button type="button" class="transcript-toggle" aria-expanded="false" onclick="toggleTranscript(this)">
+        Show Transcript
+        </button> |
+        <a href="intro-transcript.html">Accessible Plain Text Transcript</a>
+      </p>
+      <div id="transcript-box" class="transcript-box" style="display: none;">
+        <p>
+          <a href="#" onclick="hideTranscriptFromInner(); return false;">Hide Transcript</a>
+        </p>
+        <div class="transcript-scroll">
+          <p><strong>Intro: Words by Common</strong></p>
+          <p>we about to have<br>
+            an incredible experience
+          </p>
+          <p>of art / love / poetry /<br>
+            emceeing / freedom / expression
+          </p>
+          <p>Are y’all ready?<br>
+            I said, are y’all ready?
+          </p>
         </div>
       </div>
-      <div class="dropdown">
-        <span><img src="media/images/nav-methods.svg" alt="Remixed Methods"></span>
-        <div class="dropdown-content">
-          <a href="realm-of-entities.html">Realm of Entities</a>
-          <a href="poem-is-research.html">The Poem is the Research</a>
-        </div>
+      <script>
+        function toggleTranscript(btn) {
+          const box = document.getElementById('transcript-box');
+          const isCurrentlyVisible = box.style.display === 'block';
+        
+          if (isCurrentlyVisible) {
+            box.style.display = 'none';
+            btn.textContent = 'Show Transcript';
+            btn.setAttribute('aria-expanded', 'false');
+          } else {
+            box.style.display = 'block';
+            btn.textContent = 'Hide Transcript';
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        }
+        
+        function hideTranscriptFromInner() {
+          const box = document.getElementById('transcript-box');
+          const btn = document.querySelector('.transcript-toggle');
+        
+          box.style.display = 'none';
+          if (btn) {
+            btn.textContent = 'Show Transcript';
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        }
+      </script>
+      <h2>Welcome to WAVEFORMS</h2>
+      <p>This webtext mixtape is adapted from my dissertation study on Hip Hop and spoken word poetry in K–12 classrooms. It features sounds that hold deep personal meaning, including the voices of four student-poets who are now young adults. Together we “sample” personal and educational experiences while reflecting on the Hip Hop and spoken word learning community that we co-constructed when I was their high school English teacher. In this study, we re-membered those experiences as we explored the youth poetry slam through sound. Together we show how youth-centered art spaces can help us read and write the <em>word</em> and the <em>world</em> (Freire &amp; Macedo, 1987), re-member the past (Dillard, 2008; 2011), and imagine new ways of <em>becoming</em> in a world that is not yet (Greene, 1977).</p>
+      <p>I come to this work as a poet, DJ, and beatmaker who attends to the complexities of sound. For me, sound is a way of knowing and composing. Sound work offers methods of unflattening (Sousanis, 2015) traditional research and in this study includes the intentional uses of spoken language, field recordings, and musical samples. Sonic compositions require embodied sensibilities in which rhythms, loops, frequencies, and fragments of sound are remixed into new configurations. All of the music and poetry in this webtext are original. I produced the album, in collaboration with my participant-collaborators, using a digital audio workstation (DAW) called Ableton Live (see Figure 1). I chose to work with sound because the essence of this project is the spoken word. To represent the sonic dimensions of this work faithfully, I needed to include the actual language as it was spoken by the poets themselves. This decision centers the literal voices of my collaborators, inviting listeners to engage with the layered, dynamic textures of our collective poetic inquiry. In a webtext dedicated to multimodal scholarship, sound makes possible what print alone cannot. It amplifies the embodied, resonant dimensions of research, transforming the text into something that can be heard, felt, and experienced.</p>
+      <figure class="figure-1">
+        <img src="media/images/figure1.png" alt="" loading="lazy">
+        <figcaption>Figure 1: Session View in Ableton Live showing thematically color-coded clips representing audio excerpts from interviews, focus groups, and participant poems used in the composition process.</figcaption>
+      </figure>
+      <h2>Recordings as Waveforms</h2>
+      <p>The title <strong>WAVEFORMS</strong> refers to the visual representation of sound (see Figure 2), symbolized by the lines you see when working inside a DAW like Ableton Live. These lines represent amplitude over time, revealing the loudness, rhythm, and dynamics of a recording. Every voice in this project&mdash;every laugh, breath, pause, or verse&mdash;was recorded as a waveform.</p>
+      <p>The word WAVEFORMS can be understood by breaking down the compound. <strong>Waves</strong> are disturbances that transfer energy through a medium like air or water, causing it to vibrate or oscillate. In this webtext waves are recorded voices, fragments of poems, snaps of fingers in a theater, ambient noise, and layered musical samples. These sounds act as temporal disturbances that transfer energy between past and present. <strong>Forms</strong> hold. They contain. They shape, structure, limit, and enclose. The forms in this webtext are songs, within the larger form of a mixtape, within the larger form of an album. <em>Forms within forms</em>, yet simultaneously resisting a singular form. The songs are waveforms in the literal sense, but also <em>forms</em> of knowledge, inquiry, research, and pedagogy. This is research in waveform.</p>
+      <p>This project builds upon an evolving conversation in <em>Kairos</em> about sound and composition, particularly Tanya Rodrigue and colleagues’ 
+        <a href="https://kairos.technorhetoric.net/21.1/praxis/rodrigue/index.html">"Navigating the Soundscape, Composing with Audio" (2016)</a>, which offered a useful language for sonic rhetoric grounded in genre-based analysis and rhetorical strategies like voice, silence, and music. Their collaborative pedagogical approach emphasized flexibility, play, and metacognition as critical tools for first-time audio composers. While I share their belief in the value of sound as a rhetorical resource, my work diverges by embracing a more affective epistemology. I draw from sound studies, remix studies, and Black sonic traditions to explore an embodied way of knowing through sound. Rather than instructing students to master genre conventions, I’m interested in what happens when student voices, cultural samples, and archival recordings collide. In this sense, my sonic compositions act less as representational artifacts and more as multiphonic portraits of who we were, what we said, and what continues to sound.
+      </p>
+      <div style="clear: both;"></div>
+      <figure class="figure-2">
+        <img src="media/images/figure2.png" alt="" loading="lazy">
+        <figcaption>Figure 2: Waveform of the Amen Break, the iconic six-second drum loop from The Winstons' 1969 track 'Amen, Brother.' Widely sampled in Hip Hop, jungle, and electronic music, this breakbeat exemplifies how sound fragments become part of the collective sonic archive.</figcaption>
+      </figure>
+      <p>In a recent text message exchange with multimedia scholar Emery Petchauer, we discussed the limits and possibilities of form and representation. He pointed me back to a conversation between him and Ruth Nicole Brown on their <a href="https://formsoffreedom.com/With-Reverence" target="_blank">Forms of Freedom website</a> (Petchauer &amp; Brown, 2022), where form is understood not as fixed, but in terms of dynamic possibility. In an audio essay for <em>Seismograf Peer</em>, Petchauer and Brown (2023) offered “borderless multiphonic vignettes” that refuse “representation and discursive explanation” as a deliberate, anticolonial method (p. 1). I was drawn to their refusal of representation as a singular mode of knowing. Instead, they lean into collisions of sounds, voices, and forms that transgress semantic and rhetorical permanence, almost nearing the edge of collapse. Their work parallels the participatory compositional processes used to co-produce the songs on this mixtape. In this webtext, form is not fixed, but emergent. These sonic epistemologies shaped my approach to research and composition as embodied, entangled, and polyphonic.</span></p>
+      <h2>The Sounds of Our Inquiry</h2>
+      <p>These are the research questions that framed my dissertation study:</p>
+      <ol>
+        <li>What happens when young people narrativize their experiences for a poetry slam?</li>
+        <li>How do we re-member the youth poetry slam?</li>
+        <li>What kinds of critical Hip Hop literacies are practiced in the youth poetry slam?</li>
+      </ol>
+      <p>One significant question I asked participants during semi-structured interviews was “<strong>what do these experiences <em>sound</em> like to you?</strong>” This question became an invitation into multimodal meaning-making through collaborative composition, sonic memory work, and critical reflection as we created songs together in Ableton Live.</p>
+      <h2>What to Expect</h2>
+      <p>What follows are ten original music and spoken word compositions. The tracks are divided into five sections: <strong>Intro, Theoretical Conversations, Remixed Methods, Praisesongs</strong>, and <strong>Outro</strong>. Each section includes audio, transcribed lyrics, and liner notes. The liner notes are similar to what’s included on the sleeve of a vinyl album or inside a CD booklet. These notes enabled me to discuss each track, provide context, and explain findings. The compositions that follow represent data in the form of spoken word praisesongs (Mooney, 2024), composed from semi-structured interviews, focus groups, and archival spoken word recordings. Cynthia Dillard (2011) asked “how might our memories, our encounters and representations of those, act as praisesongs in the world?” (p. 234). Praisesongs are found in most religious traditions, and unlike hymns, they are a form of prayer in which the words and music are inseparable. As you move through the webtext, you’ll encounter original beats, poetry, and youth voices remixed into conversation with scholars, writers, MCs, and multimedia artists.</p>
+      <h2>Some Guidance on How to Read, Listen & Engage</h2>
+      <p>Some pages include one track, while others provide a dropdown menu for multiple tracks within that category. You can read the transcribed lyrics as you listen by clicking on 
+        <strong><span style="color: #431a50;">Show Transcript</span></strong>. This triggers a scrollable text box with lyrics embedded on the page. This is ideal for reading along while you listen. Alternatively, you can click on <strong><span style="color: #431a50;">Accessible Plain Text Transcript</span></strong>, which opens a new page with text only. As you listen, you can scroll or rewind. You can pause. You can move within, between, and through. There is no single linear path through the webtext&mdash;no prescriptive order that dictates how you engage with the compositions. In this way, the webtext acknowledges a turn from linearity to modularity. WAVEFORMS is a digital exhibit that you are invited to curate as a participant-visitor to this site.
+      </p>
+      <h2>Accessibility Statement</h2>
+      <p>This webtext was designed with accessibility and an inclusive user experience as a priority. I have made the following intentional choices to support readers and users engaging with this work:</p>
+      <ul>
+        <li>Clear structure with meaningful headings, paragraphs, lists, and captions so the text reads in a logical order.</li>
+        <li>Alternative text for all images, with descriptions or captions that avoid unnecessary repetition.</li>
+        <li>Color choices that meet recommended contrast standards for readability.</li>
+        <li>Audio content that includes accessible transcripts for those who need or prefer them.</li>
+        <li>Naviation buttons on each page to provide easy movement around the webtext.</li>
+      </ul>
+      <p>Every effort has been made to design this webtext as an accessible multimodal composition. I always welcome feedback on improving accessibility and encourage readers to share suggestions so that authors like myself may continue to enhance the inclusivity of our multimodal work.</p>
+      <hr style="border: none; height: 2px; background-color: #ccc; margin: 2em 0;">
+      <p><em>Each track of the mixtape is embedded on its respective menu page. For an audio-only listening experience, the audio compositions are assembled as a playlist on Soundcloud below.</em></p>
+      <iframe class="responsive-iframe" height="450" allow="autoplay"
+        title="Audio playlist for entire mixtape"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2026819329&color=%23431a50&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
+      </iframe>
+      <div class="track-nav">
+        <a href="recife.html">
+        <img src="media/images/next-button.svg" alt="Next Track" class="track-image-button">
+        </a>
       </div>
-      <div class="dropdown">
-        <span><img src="media/images/nav-praisesongs.svg" alt="Praisesongs"></span>
-        <div class="dropdown-content">
-          <a href="edsel-song.html">Edsel’s Song</a>
-          <a href="aaleah-song.html">Aaleah’s Song</a>
-          <a href="otto-song.html">Otto’s Song</a>
-          <a href="fatmata-song.html">Fatmata’s Song</a>
-        </div>
-      </div>
-      <a href="outro.html">
-        <img src="media/images/nav-outro.svg" alt="Outro">
-      </a>
-      <a href="references.html">
-        <img src="media/images/nav-references.svg" alt="References">
-      </a>
-      <a href="author.html">
-        <img src="media/images/nav-author.svg" alt="Author">
-      </a>
-    </nav>
-  </div>
-</header>
-
-  <main id="main" class="content-wrap">
-    <h1>Intro</h1>
-
-   <div class="audio-embed">
-  <iframe class="responsive-iframe" height="166" allow="autoplay"
-    title="Audio player for Intro track"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1185861439&color=%23431a50&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-  </iframe>
-</div>
-
-   <p class="transcript-link">
-  <button type="button" class="transcript-toggle" aria-expanded="false" onclick="toggleTranscript(this)">
-    Show Transcript
-  </button> |
-  <a href="intro-transcript.html">Accessible Plain Text Transcript</a>
-</p>
-
-<div id="transcript-box" class="transcript-box" style="display: none;">
-  <p>
-    <a href="#" onclick="hideTranscriptFromInner(); return false;">Hide Transcript</a>
-  </p>
-  <div class="transcript-scroll">
-    <p><strong>Intro: Words by Common</strong></p>
-    <p>we about to have<br>
-    an incredible experience</p>
-    <p>of art / love / poetry /<br>
-    emceeing / freedom / expression</p>
-    <p>Are y’all ready?<br>
-    I said, are y’all ready?</p>
-  </div>
-</div>
-
-<script>
-function toggleTranscript(btn) {
-  const box = document.getElementById('transcript-box');
-  const isCurrentlyVisible = box.style.display === 'block';
-
-  if (isCurrentlyVisible) {
-    box.style.display = 'none';
-    btn.textContent = 'Show Transcript';
-    btn.setAttribute('aria-expanded', 'false');
-  } else {
-    box.style.display = 'block';
-    btn.textContent = 'Hide Transcript';
-    btn.setAttribute('aria-expanded', 'true');
-  }
-}
-
-function hideTranscriptFromInner() {
-  const box = document.getElementById('transcript-box');
-  const btn = document.querySelector('.transcript-toggle');
-
-  box.style.display = 'none';
-  if (btn) {
-    btn.textContent = 'Show Transcript';
-    btn.setAttribute('aria-expanded', 'false');
-  }
-}
-</script>
-
-    <h2>Welcome to WAVEFORMS</h2>
-
-    <p>This webtext mixtape is adapted from my dissertation study on Hip Hop and spoken word poetry in K–12 classrooms. It features sounds that hold deep personal meaning, including the voices of four student-poets who are now young adults. Together we “sample” personal and educational experiences while reflecting on the Hip Hop and spoken word learning community that we co-constructed when I was their high school English teacher. In this study, we re-membered those experiences as we explored the youth poetry slam through sound. Together we show how youth-centered art spaces can help us read and write the <em>word</em> and the <em>world</em> (Freire &amp; Macedo, 1987), re-member the past (Dillard, 2008; 2011), and imagine new ways of <em>becoming</em> in a world that is not yet (Greene, 1977).</p>
-
-    <p>I come to this work as a poet, DJ, and beatmaker who attends to the complexities of sound. For me, sound is a way of knowing and composing. Sound work offers methods of unflattening (Sousanis, 2015) traditional research and in this study includes the intentional uses of spoken language, field recordings, and musical samples. Sonic compositions require embodied sensibilities in which rhythms, loops, frequencies, and fragments of sound are remixed into new configurations. All of the music and poetry in this webtext are original. I produced the album, in collaboration with my participant-collaborators, using a digital audio workstation (DAW) called Ableton Live (see Figure 1). I chose to work with sound because the essence of this project is the spoken word. To represent the sonic dimensions of this work faithfully, I needed to include the actual language as it was spoken by the poets themselves. This decision centers the literal voices of my collaborators, inviting listeners to engage with the layered, dynamic textures of our collective poetic inquiry. In a webtext dedicated to multimodal scholarship, sound makes possible what print alone cannot. It amplifies the embodied, resonant dimensions of research, transforming the text into something that can be heard, felt, and experienced.</p>
-
-     <figure class="figure-1">
-  <img src="media/images/figure1.png" alt="" loading="lazy">
-  <figcaption>Figure 1: Session View in Ableton Live showing thematically color-coded clips representing audio excerpts from interviews, focus groups, and participant poems used in the composition process.</figcaption>
-</figure>
-
-<h2>Recordings as Waveforms</h2>
-
-    <p>The title <strong>WAVEFORMS</strong> refers to the visual representation of sound (see Figure 2), symbolized by the lines you see when working inside a DAW like Ableton Live. These lines represent amplitude over time, revealing the loudness, rhythm, and dynamics of a recording. Every voice in this project&mdash;every laugh, breath, pause, or verse&mdash;was recorded as a waveform.</p>
-
-     <p>The word WAVEFORMS can be understood by breaking down the compound. <strong>Waves</strong> are disturbances that transfer energy through a medium like air or water, causing it to vibrate or oscillate. In this webtext waves are recorded voices, fragments of poems, snaps of fingers in a theater, ambient noise, and layered musical samples. These sounds act as temporal disturbances that transfer energy between past and present. <strong>Forms</strong> hold. They contain. They shape, structure, limit, and enclose. The forms in this webtext are songs, within the larger form of a mixtape, within the larger form of an album. <em>Forms within forms</em>, yet simultaneously resisting a singular form. The songs are waveforms in the literal sense, but also <em>forms</em> of knowledge, inquiry, research, and pedagogy. This is research in waveform.</p> 
-
-    <p>This project builds upon an evolving conversation in <em>Kairos</em> about sound and composition, particularly Tanya Rodrigue and colleagues’ 
-<a href="https://kairos.technorhetoric.net/21.1/praxis/rodrigue/index.html">"Navigating the Soundscape, Composing with Audio" (2016)</a>, which offered a useful language for sonic rhetoric grounded in genre-based analysis and rhetorical strategies like voice, silence, and music. Their collaborative pedagogical approach emphasized flexibility, play, and metacognition as critical tools for first-time audio composers. While I share their belief in the value of sound as a rhetorical resource, my work diverges by embracing a more affective epistemology. I draw from sound studies, remix studies, and Black sonic traditions to explore an embodied way of knowing through sound. Rather than instructing students to master genre conventions, I’m interested in what happens when student voices, cultural samples, and archival recordings collide. In this sense, my sonic compositions act less as representational artifacts and more as multiphonic portraits of who we were, what we said, and what continues to sound.</p> 
-
-    <div style="clear: both;"></div>
-    <figure class="figure-2">
-  <img src="media/images/figure2.png" alt="" loading="lazy">
-  <figcaption>Figure 2: Waveform of the Amen Break, the iconic six-second drum loop from The Winstons' 1969 track 'Amen, Brother.' Widely sampled in Hip Hop, jungle, and electronic music, this breakbeat exemplifies how sound fragments become part of the collective sonic archive.</figcaption>
-</figure>
-
-    <p>In a recent text message exchange with multimedia scholar Emery Petchauer, we discussed the limits and possibilities of form and representation. He pointed me back to a conversation between him and Ruth Nicole Brown on their <a href="https://formsoffreedom.com/With-Reverence" target="_blank">Forms of Freedom website</a> (Petchauer &amp; Brown, 2022), where form is understood not as fixed, but in terms of dynamic possibility. In an audio essay for <em>Seismograf Peer</em>, Petchauer and Brown (2023) offered “borderless multiphonic vignettes” that refuse “representation and discursive explanation” as a deliberate, anticolonial method (p. 1). I was drawn to their refusal of representation as a singular mode of knowing. Instead, they lean into collisions of sounds, voices, and forms that transgress semantic and rhetorical permanence, almost nearing the edge of collapse. Their work parallels the participatory compositional processes used to co-produce the songs on this mixtape. In this webtext, form is not fixed, but emergent. These sonic epistemologies shaped my approach to research and composition as embodied, entangled, and polyphonic.</span></p>
-
-<h2>The Sounds of Our Inquiry</h2>
-
-<p>These are the research questions that framed my dissertation study:</p>
-
-<ol>
-  <li>What happens when young people narrativize their experiences for a poetry slam?</li>
-  <li>How do we re-member the youth poetry slam?</li>
-  <li>What kinds of critical Hip Hop literacies are practiced in the youth poetry slam?</li>
-</ol>
-
-<p>One significant question I asked participants during semi-structured interviews was “<strong>what do these experiences <em>sound</em> like to you?</strong>” This question became an invitation into multimodal meaning-making through collaborative composition, sonic memory work, and critical reflection as we created songs together in Ableton Live.</p>
-
-<h2>What to Expect</h2>
-
-<p>What follows are ten original music and spoken word compositions. The tracks are divided into five sections: <strong>Intro, Theoretical Conversations, Remixed Methods, Praisesongs</strong>, and <strong>Outro</strong>. Each section includes audio, transcribed lyrics, and liner notes. The liner notes are similar to what’s included on the sleeve of a vinyl album or inside a CD booklet. These notes enabled me to discuss each track, provide context, and explain findings. The compositions that follow represent data in the form of spoken word praisesongs (Mooney, 2024), composed from semi-structured interviews, focus groups, and archival spoken word recordings. Cynthia Dillard (2011) asked “how might our memories, our encounters and representations of those, act as praisesongs in the world?” (p. 234). Praisesongs are found in most religious traditions, and unlike hymns, they are a form of prayer in which the words and music are inseparable. As you move through the webtext, you’ll encounter original beats, poetry, and youth voices remixed into conversation with scholars, writers, MCs, and multimedia artists.</p> 
-
-<h2>Some Guidance on How to Read, Listen & Engage</h2>
-
-<p>Some pages include one track, while others provide a dropdown menu for multiple tracks within that category. You can read the transcribed lyrics as you listen by clicking on 
- <strong><span style="color: #431a50;">Show Transcript</span></strong>. This triggers a scrollable text box with lyrics embedded on the page. This is ideal for reading along while you listen. Alternatively, you can click on <strong><span style="color: #431a50;">Accessible Plain Text Transcript</span></strong>, which opens a new page with text only. As you listen, you can scroll or rewind. You can pause. You can move within, between, and through. There is no single linear path through the webtext&mdash;no prescriptive order that dictates how you engage with the compositions. In this way, the webtext acknowledges a turn from linearity to modularity. WAVEFORMS is a digital exhibit that you are invited to curate as a participant-visitor to this site.</p>  
-
-<h2>Accessibility Statement</h2>
-
-<p>This webtext was designed with accessibility and an inclusive user experience as a priority. I have made the following intentional choices to support readers and users engaging with this work:</p>
-
-<ul>
- <li>Clear structure with meaningful headings, paragraphs, lists, and captions so the text reads in a logical order.</li>
-  <li>Alternative text for all images, with descriptions or captions that avoid unnecessary repetition.</li>
-  <li>Color choices that meet recommended contrast standards for readability.</li>
-  <li>Audio content that includes accessible transcripts for those who need or prefer them.</li>
-  <li>Naviation buttons on each page to provide easy movement around the webtext.</li>
-</ul>
-
-<p>Every effort has been made to design this webtext as an accessible multimodal composition. I always welcome feedback on improving accessibility and encourage readers to share suggestions so that authors like myself may continue to enhance the inclusivity of our multimodal work.</p>
-
-<hr style="border: none; height: 2px; background-color: #ccc; margin: 2em 0;">
-
-<p><em>Each track of the mixtape is embedded on its respective menu page. For an audio-only listening experience, the audio compositions are assembled as a playlist on Soundcloud below.</em></p> 
-    
-<iframe class="responsive-iframe" height="450" allow="autoplay"
-title="Audio playlist for entire mixtape"
-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2026819329&color=%23431a50&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
-</iframe>
-
-<div class="track-nav">
-  <a href="recife.html">
-  <img src="media/images/next-button.svg" alt="Next Track" class="track-image-button">
-</a>
-</div>
- 
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Brian Mooney</p>
-  </footer>
-</body>
+    </main>
+    <footer>
+      <p>&copy; 2025 Brian Mooney</p>
+    </footer>
+  </body>
 </html>
