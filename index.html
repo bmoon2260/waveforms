@@ -61,6 +61,13 @@
           title="Audio player for Intro track"
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1185861439&color=%23431a50&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
         </iframe>
+<div id="sc-controls" role="group" aria-label="Custom audio controls for Intro track">
+  <button id="sc-play" aria-label="Play track">▶ Play</button>
+  <button id="sc-pause" aria-label="Pause track">⏸ Pause</button>
+  <button id="sc-rewind" aria-label="Rewind track">⏪ Rewind</button>
+</div>
+<div id="audio-visualizer" aria-hidden="true"></div>
+
       </div>
       <p class="transcript-link">
         <button type="button" class="transcript-toggle" aria-expanded="false" onclick="toggleTranscript(this)">
@@ -170,5 +177,51 @@
     <footer>
       <p>&copy; 2025 Brian Mooney</p>
     </footer>
+  <script src="https://w.soundcloud.com/player/api.js"></script>
+<script>
+  const iframeElement = document.querySelector('.audio-embed iframe');
+  const widget = SC.Widget(iframeElement);
+
+  const playBtn = document.getElementById('sc-play');
+  const pauseBtn = document.getElementById('sc-pause');
+  const rewindBtn = document.getElementById('sc-rewind');
+  const visualizer = document.getElementById('audio-visualizer');
+
+  playBtn.addEventListener('click', () => {
+    widget.play();
+  });
+
+  pauseBtn.addEventListener('click', () => {
+    widget.pause();
+  });
+
+  rewindBtn.addEventListener('click', () => {
+    widget.seekTo(0);
+  });
+
+  // Visualizer logic
+  let pulseInterval;
+
+  widget.bind(SC.Widget.Events.PLAY, () => {
+    visualizer.style.opacity = 1;
+    startPulse();
+  });
+
+  widget.bind(SC.Widget.Events.PAUSE, stopPulse);
+  widget.bind(SC.Widget.Events.FINISH, stopPulse);
+
+  function startPulse() {
+    clearInterval(pulseInterval);
+    pulseInterval = setInterval(() => {
+      visualizer.style.opacity = visualizer.style.opacity == 1 ? 0.3 : 1;
+    }, 500);
+  }
+
+  function stopPulse() {
+    clearInterval(pulseInterval);
+    visualizer.style.opacity = 0;
+  }
+</script>
+
   </body>
 </html>
